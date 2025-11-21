@@ -1,0 +1,16 @@
+.Product {
+  border: solid white 1px;
+  border-radius: 24px;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px 10px 30px 10px;
+}
+
+.card-body {
+  margin: 0px 60px 20px 60px;
+}
+
+img {
+  height: 120px;
+  border: solid white 2px;
+}
