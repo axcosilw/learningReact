@@ -1,15 +1,21 @@
 import "./product.css";
-
-function Product({ title, price, features, features3 }) {
-  let isDiscount = price > 30000;
-  let styles = { backgroundColor: isDiscount ? "blue" : null };
+import Price from "./Price";
+function Product({ title, idx, Description }) {
+  let oldPrices = ["2340", "119,34", "34,443", "991,11"];
+  let newPrices = ["1110", "11204", "33003", "999,011"];
+  let description = [
+    ["You're on a roduct", "5 programmable butons"],
+    ["Because  missing", "intutive"],
+    ["Make features safe coding", "happie-happie-optical"],
+    ["but  feature", "lol"],
+  ];
   return (
     <>
-      <div className="Product" style={styles}>
-        <h4>Product title:{title}</h4>
-        <p>Product's price:{price / 2}</p>
-
-        {isDiscount && <p>discount of 5%</p>}
+      <div className="Product">
+        <h4>{title}</h4>
+        <p>{description[idx][0]}</p>
+        <p>{description[idx][1]}</p>
+        <Price oldPrice={oldPrices[idx]} newPrice={newPrices[idx]} />
       </div>
     </>
   );
