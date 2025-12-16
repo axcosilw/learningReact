@@ -2,6 +2,8 @@ import "./App.css";
 import ProductTab from "./ProductTab";
 import Button from "./Button.jsx";
 import Form from "./Form.jsx";
+import Like from "./like.jsx";
+import Counter from "./Counter.jsx";
 
 function App() {
   return (
@@ -10,8 +12,9 @@ function App() {
       <ProductTab /> */}
 
       {/* <Button /> */}
-
-      <Form />
+      <Counter />
+      <Like />
+      {/* <Form /> */}
     </>
   );
 }
