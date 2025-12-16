@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "react-state-class",
+=======
+  "name": "basic-react-app",
+>>>>>>> 891dc6a5b748882c21fd953650dcf0d6b22e3659
   "private": true,
   "version": "0.0.0",
   "type": "module",
